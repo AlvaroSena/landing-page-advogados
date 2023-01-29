@@ -1,0 +1,96 @@
+.home-container {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+  url('../../assets/direito.jpg');
+  background-repeat: no-repeat, repeat;
+
+  .content {
+    max-width: 1120px;
+    margin: 0 auto;
+    color: var(--white);
+    z-index: 1;
+    @media (max-width: 1119px) {
+      margin: 0 2rem;
+    }
+
+    padding-top: 5rem;
+
+    .text-box {
+      max-width: 800px;
+      padding: 2rem 0 3rem 0;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        padding: 2rem 0;
+        font-size: 1.2rem;
+      }
+
+      .a-services {
+        color: var(--white);
+        background: var(--primary);
+        text-decoration: none;
+        padding: 1rem 3rem;
+        font-size: 1.2rem;
+        border-radius: 30px;
+
+        transition: 0.2s;
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}
+
+.services-container {
+  .services-content {
+    max-width: 1120px;
+    margin: 2rem auto;
+
+    .h1-services {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 1119px) {
+      margin: 2rem;
+    }
+
+    .cards-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      
+      .card-item {
+        background: var(--white);
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1rem;
+        border-radius: 5px;
+
+        img {
+          width: 64px;
+          height: 64px;
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          color: var(--primary);
+        }
+
+        .service-description {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+}
